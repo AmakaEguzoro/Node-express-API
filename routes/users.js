@@ -11,14 +11,14 @@ const users = [
   {
     firstName: "Jane",
     lastName: "Doe",
-    age: 25,
+    age: 20,
   },
 ];
 
 // all routes in here are starting with /users
 router.get("/", (req, res) => {
   console.log(users);
-  res.send("Hello");
+  res.send(users);
 });
 
 router.post("/", (req, res) => {});
