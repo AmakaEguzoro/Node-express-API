@@ -21,4 +21,6 @@ router.get("/", (req, res) => {
   res.send("Hello");
 });
 
+router.post("/", (req, res) => {});
+
 export default router;
