@@ -17,10 +17,14 @@ const users = [
 
 // all routes in here are starting with /users
 router.get("/", (req, res) => {
-  console.log(users);
   res.send(users);
 });
 
-router.post("/", (req, res) => {});
+router.post("/", (req, res) => {
+  const user = req.body;
+
+  users.push(user);
+  res.send("POST ROUTE REACHED");
+});
 
 export default router;
