@@ -23,6 +23,7 @@ router.get("/:id", (req, res) => {
   const foundUser = users.find((user) => user.id === id);
 
   res.send(foundUser);
+  from;
 });
 
 export default router;
