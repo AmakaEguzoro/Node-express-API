@@ -17,7 +17,7 @@ router.post("/", (req, res) => {
 
   res.send(`User with the name ${user.firstName} added to the database!!`);
 });
-gfjhk;
+
 router.get("/:id", (req, res) => {
   const { id } = req.params;
 
